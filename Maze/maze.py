@@ -117,17 +117,26 @@ class Maze():
         frontier=StackFrontier()        # using depth-first search algorithm
         frontier.add(start)
 
+        #initialize an empty explored set
         self.explored=set()
 
+        #looping till solution is found
         while True:
+
+            #if nothing left in frontier, then no solution
             if frontier.empty():
                 raise Exception("No solution")
+
+            #choose a node from frontier
             node=frontier.remove()
             self.num_explored += 1
 
+            #if node is the goal, then we have the solution
             if node.state==self.goal:
                 actions=[]
                 cells=[]
+
+                #follow parent nodes to find solution path
                 while node.parent is not None:
                     actions.append(node.action)
                     cells.append(node.state)
@@ -136,8 +145,11 @@ class Maze():
                 cells.reverse()
                 self.solution=(actions,cells)
                 return
-            self.explored.add(node.state)
 
+            #mark node as explored
+            self.explored.add(node.state)
+            
+            #add neighbours to the frontier
             for action,state in self.neighbors(node.state):
                 if not frontier.contains_state(state) and state not in self.explored:
                     child=Node(state=state, parent=node, action=action)
