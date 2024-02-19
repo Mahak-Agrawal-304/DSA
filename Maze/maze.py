@@ -110,7 +110,14 @@ class Maze():
     def solve(self):
         self.num_explored=0
         start=Node(state=self.start, parent=None, action=None)
-        frontier=StackFrontier()        # using depth-first search algorithm
+
+        # using depth-first search algorithm
+        frontier=StackFrontier()        
+        
+        ''' frontier=QueueFrontier()
+        for breadth-first search algorithm
+        '''
+        
         frontier.add(start)
 
         self.explored=set()
