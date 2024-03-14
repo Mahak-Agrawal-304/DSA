@@ -1,11 +1,11 @@
 Problems like solving a maze can be solved through search algorithms such as depth-first search and breadth-first search algorithms.
 
 Search problems have a set of initial set of:
-*Initial State
-*Actions
-*Transition Model
-*Goal Test
-*Path Cost Function
+* Initial State
+* Actions
+* Transition Model
+* Goal Test
+* Path Cost Function
 
 ## Approach
 General approach taken to solve search problems is given below. Here frontier is going to represent all the available options (path to goal test) that have not been explored or visited yet.
@@ -19,11 +19,11 @@ General approach taken to solve search problems is given below. Here frontier is
 
 ## Algorithms
 Algorithms can be of two types:
-1. Uninformed Search:
-   A search strategy that uses no problem-specific knowledge
+1. **Uninformed Search**:
+   A search strategy that uses no problem-specific knowledge.
    For example, depth-first search and breadth-first search
-2. Informed Search:
-   A search strategy that uses problem-specific knowledge to find solutions more efficiently
+2. **Informed Search**:
+   A search strategy that uses problem-specific knowledge to find solutions more efficiently.
    For example, greedy best-first search
 
 ### Depth-First Search
