@@ -28,7 +28,7 @@ Algorithms can be of two types:
 
 ### Depth-First Search
 The search traversal in depth-first search is implemented through stack.
-It starts at the root node and explores as far as possible along each branch before backtracking. The search begins from the the first node and goes deeper and deeper exploring down until the goal test is found. If the goal test is not found, the search path is changed to the path that was stopped exploring during the initial search, the same procedure is repeated for that branch.
+It starts at the root node and explores as far as possible along each branch before backtracking. The search begins from the first node and goes deeper and deeper exploring down until the goal test is found. If the goal test is not found, the search path is changed to the path that was stopped exploring during the initial search, same procedure is repeated for that branch.
 
 ### Breadth-First Search
 Queue is used for implementing breadth-first search. 
@@ -41,3 +41,9 @@ It is a search algorithm that expands the node that is closest to the gaol, as e
 It is an advanced model of greedy best-first search that expands node with the lowest value of g(n)+h(n),
 where g(n)=cost to reach node
       h(n)=estimated cost to the goal
+
+## Files
+maze.py contains general code for traversing through the maze, using both depth-first and breadth-first algorithms.
+maze1.txt contains an example of an unsolved maze where A is the initial point, B is the goal and # represents walls.
+usingBFS.py is specifically programmed to solve the problem using breadth-first algorithm.
+Similarly, usingDFS.py is specifically programmed to solve the problem using depth-first algorithm.
