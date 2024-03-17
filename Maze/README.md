@@ -43,7 +43,7 @@ where g(n)=cost to reach node
       h(n)=estimated cost to the goal
 
 ## Files
-maze.py contains general code for traversing through the maze, using both depth-first and breadth-first algorithms.
-maze1.txt contains an example of an unsolved maze where A is the initial point, B is the goal and # represents walls.
-usingBFS.py is specifically programmed to solve the problem using breadth-first algorithm.
-Similarly, usingDFS.py is specifically programmed to solve the problem using depth-first algorithm.
+- maze.py contains general code for traversing through the maze, using both depth-first and breadth-first algorithms.
+- maze1.txt contains an example of an unsolved maze where A is the initial point, B is the goal and # represents walls.
+- usingBFS.py is specifically programmed to solve the problem using breadth-first algorithm.
+- Similarly, usingDFS.py is specifically programmed to solve the problem using depth-first algorithm.
